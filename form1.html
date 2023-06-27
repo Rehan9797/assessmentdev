@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PAGE</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <div class="D1">
+        <h1 id="h1">FORM SUBMISSION</h1>
+        <form action="login.html">
+            <input type="text" name="u" placeholder="E-mail" id="Email" onkeyup="validateEmail()"/>
+            <br>
+            <span id="err1"></span>
+            <br>
+            <input type="text" name="u" placeholder=" Number" id="Number" onkeyup="validatePhone()"/>
+            <br>
+            <span id="err2"></span>
+            <br>
+            <input type="password" name="p" placeholder="Password" id="password" onkeyup="validatePass()"/>
+            <br>
+            <span id="err3"></span>
+            <br>
+            <button type="submit" class="sub" onclick="return validateform()">SUBMIT</button>
+        </form>
+    </div>
+    <script src="form1.js"></script>
+</body>
+</html>
